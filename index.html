@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surprise!</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #222;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        h1 {
+            transform: rotate(180deg);
+            transition: transform 0.5s ease-in-out;
+            cursor: pointer;
+        }
+        h1.flipped {
+            transform: rotate(0);
+        }
+    </style>
+</head>
+<body>
+    <h1 onclick="flipText()">˙uᴉɐƃol sǝɯᴉʇǝɯos ˙ǝʎq pǝuᴉɥɔsᴉsɹǝq ɹnoʎ ǝʞɐɯ</h1>
+    <script>
+        function flipText() {
+            const heading = document.querySelector("h1");
+            heading.classList.toggle("flipped");
+            heading.textContent = "Yeh ley bhen! Itna asaan tha yeh bnaana. Tujhy chumu bna raha tha yeh keh kr k 3 ghante lagaey hain. Ab bol chumu kisi aur ko bnayiou, kyunki I have real friends!";
+        }
+    </script>
+</body>
+</html>
